@@ -125,7 +125,8 @@
 		}
 
 		.content_right {
-			width: 272px;
+			padding-left: 100px;
+			width: 100vw;
 			float: right;
 
 			.title {
