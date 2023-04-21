@@ -8,3 +8,5 @@ export const getTypeTwo = (type_one)=>request('/getTypeTwo',{type_one},'GET')
 export const getTypeTwoList = (type_one,type_two)=>request('/getTypeTwoList',{type_one,type_two},'GET')
 //热门数据
 export const getList1 = () => request('/hotList','GET');
+//详情数据
+export const getDetail = (goodId) => request('/detail',{goodId},'GET');
