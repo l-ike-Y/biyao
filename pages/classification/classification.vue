@@ -65,7 +65,7 @@
 	})
   const todetail =(Id)=>{
 	  uni.navigateTo({
-	  	url:'/pages/detail/datail?Id='+Id,
+	  	url:'/pages/detail/detail?Id='+Id,
 	  })
   }
 	let ersj = (na) => {
