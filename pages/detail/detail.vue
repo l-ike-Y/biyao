@@ -124,7 +124,7 @@
 	let flag = ref(true);
 	onLoad((option) => {
 		console.log(option.Id);
-		id.value = option.id
+		id.value = option.Id
 		getDetail(id.value).then(res => {
 			console.log(res);
 			list.value = res[0]
