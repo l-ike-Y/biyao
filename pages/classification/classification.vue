@@ -25,7 +25,7 @@
 				</view>
 				<view class="dk">
 					<view class="sj_lis" v-for="(v,index) in item.list" :key="index">
-						<view class="lis_li">
+						<view class="lis_li" @click="todetail(v.Id)">
 							<image :src="v.imageUrl" mode="" />
 							<span>{{v.type_two}}</span>
 						</view>
@@ -63,7 +63,11 @@
 		erj.value = res[0]
 		ersj(erj.value)
 	})
-
+  const todetail =(Id)=>{
+	  uni.navigateTo({
+	  	url:'/pages/detail/datail?Id='+Id,
+	  })
+  }
 	let ersj = (na) => {
 		getTypeTwo(na).then(res => {
 			res.forEach((va, index) => {
